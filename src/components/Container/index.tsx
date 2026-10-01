@@ -14,9 +14,10 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
         "min-h-screen",
         "font-sans",
         "font-medium",
+        "p-0 m-0",
       )}
     >
-      <div className={clsx("max-w-5xl", "mx-auto", "px-8")}>
+      <div className={clsx("w-full", "mx-auto")}>
         <FormLayout>{children}</FormLayout>
       </div>
     </div>
