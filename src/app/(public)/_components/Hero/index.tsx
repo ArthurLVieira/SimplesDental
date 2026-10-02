@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DoctorHero from "../../../public/images/doctor-hero.jpg";
+import DoctorHero from "../../../../../public/images/doctor-hero.jpg";
 
 export default function Hero() {
   return (
