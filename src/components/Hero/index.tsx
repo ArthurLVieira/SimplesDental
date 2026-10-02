@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="bg-white">
       <div className="container mx-auto px-4 pt-20 sm:px-6 lg:px-8">
         <main className="flex items-center justify-center">
-          <article className="space-y-8">
+          <article className="max-w-3xl space-y-8">
             <h1 className="text-2xl font-bold text-zinc-900 sm:text-2xl md:text-6xl">
               Encontre os melhores profissionais em um único lugar!
             </h1>
@@ -29,11 +29,14 @@ export default function Hero() {
               </a>
             </div>
           </article>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block mx-auto max-w-full shadow-lg">
             <Image
               src={DoctorHero}
               alt="Imagem de destaque"
-              className="mx-auto max-w-full rounded-lg shadow-lg"
+              className="mx-auto max-w-full shadow-lg"
+              width={600}
+              height={400}
+              priority
             />
           </div>
         </main>
