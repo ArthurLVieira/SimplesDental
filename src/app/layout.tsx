@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import "@/app/globals.css";
-import DefaultLayout from "@/layouts/DefaultLayout";
+import PublicLayout from "@/layouts/PublicLayout/index.tsx";
 
 export const metadata: Metadata = {
   title: {
@@ -18,9 +18,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="pt-BR">
-      <body>
-        <DefaultLayout>{children}</DefaultLayout>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
