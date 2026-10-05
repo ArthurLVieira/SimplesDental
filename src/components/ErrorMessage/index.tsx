@@ -13,7 +13,7 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
   content,
 }) => {
   return (
-    <>
+    <div className="flex justify-center items-center max-h-/[]">
       <title>{title}</title>
       <div
         className={clsx(
@@ -30,7 +30,7 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
           <div>{content}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
